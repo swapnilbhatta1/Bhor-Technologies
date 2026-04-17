@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { LinkedinIcon, XIcon } from "@/components/icons";
+import { FacebookIcon, LinkedinIcon, WhatsappIcon, XIcon } from "@/components/icons";
 import { footerLinks } from "@/lib/site-data";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/ui/container";
@@ -50,6 +50,24 @@ export function SiteFooter() {
                   aria-label="LinkedIn"
                 >
                   <LinkedinIcon className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://www.facebook.com/share/1FdXNqkWQv/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-orange-200/70 bg-white text-slate-700 transition hover:-translate-y-0.5 hover:text-orange-500"
+                  aria-label="Facebook"
+                >
+                  <FacebookIcon className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://wa.me/message/EJ5CJSKODCIWI1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-orange-200/70 bg-white text-slate-700 transition hover:-translate-y-0.5 hover:text-orange-500"
+                  aria-label="WhatsApp"
+                >
+                  <WhatsappIcon className="h-5 w-5" />
                 </a>
                 <a
                   href="https://x.com"
