@@ -20,8 +20,8 @@ export function SiteFooter() {
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <ButtonLink href="mailto:bhor.technologies.bd@gmail.com">bhor.technologies.bd@gmail.com</ButtonLink>
-                <ButtonLink href="tel:+8801700000000" variant="secondary">
-                  +880 17 0000 0000
+                <ButtonLink href="tel:+8801349963230" variant="secondary">
+                  +8801349963230
                 </ButtonLink>
               </div>
             </div>
