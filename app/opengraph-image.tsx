@@ -58,23 +58,95 @@ export default function OpenGraphImage() {
             style={{
               display: "flex",
               alignItems: "center",
-              gap: 14,
-              color: "#fe7f2d",
-              fontSize: 24,
-              fontWeight: 700,
-              letterSpacing: "0.16em",
-              textTransform: "uppercase",
+              gap: 18,
             }}
           >
             <span
               style={{
-                width: 16,
-                height: 16,
-                borderRadius: "50%",
-                background: "#fe7f2d",
+                width: 56,
+                height: 56,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                position: "relative",
+                overflow: "hidden",
+                borderRadius: 18,
+                background: "linear-gradient(180deg, #fffdf8 0%, #fff4dd 100%)",
+                border: "1px solid rgba(251,146,60,0.26)",
               }}
-            />
-            Bhor Technologies
+            >
+              <span
+                style={{
+                  position: "absolute",
+                  bottom: 3,
+                  width: 36,
+                  height: 36,
+                  borderRadius: "50%",
+                  background: "linear-gradient(180deg, #ffd978 0%, #fe7f2d 100%)",
+                }}
+              />
+              <span
+                style={{
+                  position: "absolute",
+                  top: 11,
+                  width: 24,
+                  height: 12,
+                  borderTopLeftRadius: 20,
+                  borderTopRightRadius: 20,
+                  border: "2px solid #ffc463",
+                  borderBottom: "none",
+                }}
+              />
+              <span
+                style={{
+                  position: "absolute",
+                  top: 6,
+                  width: 2,
+                  height: 6,
+                  borderRadius: 999,
+                  background: "#f59e0b",
+                }}
+              />
+              <span
+                style={{
+                  position: "relative",
+                  color: "#172036",
+                  fontSize: 28,
+                  fontWeight: 800,
+                  transform: "translateY(2px)",
+                }}
+              >
+                B
+              </span>
+            </span>
+            <span
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: 2,
+              }}
+            >
+              <span
+                style={{
+                  color: "#fe7f2d",
+                  fontSize: 18,
+                  fontWeight: 700,
+                  letterSpacing: "0.2em",
+                  textTransform: "uppercase",
+                }}
+              >
+                Bhor
+              </span>
+              <span
+                style={{
+                  color: "#111827",
+                  fontSize: 28,
+                  fontWeight: 800,
+                }}
+              >
+                Technologies
+              </span>
+            </span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 20, width: 760 }}>
             <div
