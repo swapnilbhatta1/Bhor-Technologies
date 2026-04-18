@@ -16,7 +16,7 @@ export default function OpenGraphImage() {
           height: "100%",
           display: "flex",
           background:
-            "linear-gradient(180deg, #fffdf8 0%, #fff6e5 30%, #fff2da 58%, #fff9f1 100%)",
+            "linear-gradient(180deg, #090a10 0%, #0d0f1a 30%, #151829 58%, #0f111c 100%)",
           position: "relative",
           overflow: "hidden",
           fontFamily: "sans-serif",
@@ -27,7 +27,7 @@ export default function OpenGraphImage() {
             position: "absolute",
             inset: 0,
             background:
-              "radial-gradient(circle at 50% 88%, rgba(255, 211, 111, 0.95) 0%, rgba(254, 127, 45, 0.44) 22%, rgba(254, 127, 45, 0) 48%)",
+              "radial-gradient(circle at 50% 88%, rgba(82, 90, 255, 0.4) 0%, rgba(82, 90, 255, 0.2) 22%, rgba(0, 0, 0, 0) 48%)",
           }}
         />
         <div
@@ -40,7 +40,7 @@ export default function OpenGraphImage() {
             height: 740,
             borderRadius: "50%",
             background:
-              "radial-gradient(circle, rgba(255,244,210,1) 0%, rgba(255,219,129,0.95) 30%, rgba(254,127,45,0.55) 58%, rgba(254,127,45,0) 74%)",
+              "radial-gradient(circle, rgba(134,143,255,0.7) 0%, rgba(82,90,255,0.5) 30%, rgba(61,66,229,0.3) 58%, rgba(82,90,255,0) 74%)",
           }}
         />
         <div
@@ -82,7 +82,7 @@ export default function OpenGraphImage() {
                   width: 36,
                   height: 36,
                   borderRadius: "50%",
-                  background: "linear-gradient(180deg, #ffd978 0%, #fe7f2d 100%)",
+                  background: "linear-gradient(180deg, #868fff 0%, #525AFF 100%)",
                 }}
               />
               <span
@@ -93,7 +93,7 @@ export default function OpenGraphImage() {
                   height: 12,
                   borderTopLeftRadius: 20,
                   borderTopRightRadius: 20,
-                  border: "2px solid #ffc463",
+                  border: "2px solid #b5baff",
                   borderBottom: "none",
                 }}
               />
@@ -104,19 +104,19 @@ export default function OpenGraphImage() {
                   width: 2,
                   height: 6,
                   borderRadius: 999,
-                  background: "#f59e0b",
+                  background: "#6974ff",
                 }}
               />
               <span
                 style={{
                   position: "relative",
-                  color: "#172036",
+                  color: "#1c1e2b",
                   fontSize: 28,
                   fontWeight: 800,
                   transform: "translateY(2px)",
                 }}
               >
-                B
+                S
               </span>
             </span>
             <span
@@ -128,23 +128,23 @@ export default function OpenGraphImage() {
             >
               <span
                 style={{
-                  color: "#fe7f2d",
+                  color: "#868fff",
                   fontSize: 18,
                   fontWeight: 700,
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                 }}
               >
-                Bhor
+                Spearken
               </span>
               <span
                 style={{
-                  color: "#111827",
+                  color: "#f8fafc",
                   fontSize: 28,
                   fontWeight: 800,
                 }}
               >
-                Technologies
+                Tech
               </span>
             </span>
           </div>
@@ -154,7 +154,7 @@ export default function OpenGraphImage() {
                 fontSize: 72,
                 lineHeight: 1.02,
                 fontWeight: 800,
-                color: "#111827",
+                color: "#f8fafc",
               }}
             >
               Rise faster with AI, SaaS, and secure digital systems.
@@ -163,7 +163,7 @@ export default function OpenGraphImage() {
               style={{
                 fontSize: 30,
                 lineHeight: 1.35,
-                color: "#475569",
+                color: "#cbd5e1",
               }}
             >
               Automation-first product engineering for ambitious businesses ready to scale.

@@ -12,15 +12,15 @@ export function BenefitsSection() {
             <SectionHeading
               eyebrow="Benefits"
               title="Designed to create faster growth with less operational drag."
-              description="Bhor Technologies focuses on business outcomes that compound: speed, efficiency, automation, resilience, and a stronger digital foundation."
+              description="Spearkentech focuses on business outcomes that compound: speed, efficiency, automation, resilience, and a stronger digital foundation."
             />
           </Reveal>
           <div className="grid gap-5 sm:grid-cols-2">
             {benefitCards.map((benefit, index) => (
               <Reveal key={benefit.title} delay={index * 90}>
                 <article className="glass-panel h-full p-6">
-                  <h3 className="text-xl font-bold">{benefit.title}</h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-600">{benefit.description}</p>
+                  <h3 className="text-xl font-bold text-white">{benefit.title}</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-300">{benefit.description}</p>
                 </article>
               </Reveal>
             ))}

@@ -11,8 +11,8 @@ export function SocialProofSection() {
             <Reveal>
               <div>
                 <span className="eyebrow">Trust Signals</span>
-                <h2 className="mt-6 text-3xl font-extrabold leading-tight sm:text-4xl">
-                  Why Choose Bhor Technologies?
+                <h2 className="mt-6 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
+                  Why Choose Spearkentech?
                 </h2>
                 <p className="mt-5 max-w-xl text-base leading-8 text-slate-600">
                   We focus on shipping work that saves time, improves customer experience, and creates a stronger foundation for long-term scale.
@@ -21,7 +21,7 @@ export function SocialProofSection() {
                   {trustSignals.map((signal) => (
                     <span
                       key={signal}
-                      className="rounded-full border border-orange-200/70 bg-white px-4 py-2 text-sm font-medium text-slate-700"
+                      className="rounded-full border border-indigo-500/30 bg-white/5 px-4 py-2 text-sm font-medium text-slate-300"
                     >
                       {signal}
                     </span>
@@ -32,9 +32,9 @@ export function SocialProofSection() {
             <div className="grid gap-4 sm:grid-cols-2">
               {trustStats.map((stat, index) => (
                 <Reveal key={stat.label} delay={index * 90}>
-                  <article className="rounded-[30px] border border-orange-100/80 bg-white/92 p-6 shadow-sm">
-                    <p className="text-3xl font-extrabold text-slate-900 sm:text-4xl">{stat.value}</p>
-                    <p className="mt-3 text-sm leading-7 text-slate-600">{stat.label}</p>
+                  <article className="rounded-[30px] border border-white/5 bg-slate-900/50 p-6 shadow-sm">
+                    <p className="text-3xl font-extrabold text-white sm:text-4xl">{stat.value}</p>
+                    <p className="mt-3 text-sm leading-7 text-slate-400">{stat.label}</p>
                   </article>
                 </Reveal>
               ))}

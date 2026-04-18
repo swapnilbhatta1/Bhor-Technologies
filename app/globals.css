@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: #fffdf8;
-  --foreground: #1f2430;
-  --muted: #5f6673;
-  --border: rgba(254, 127, 45, 0.16);
-  --panel: rgba(255, 255, 255, 0.82);
-  --panel-strong: rgba(255, 255, 255, 0.94);
-  --sunrise-orange: #fe7f2d;
-  --sunrise-gold: #ffd36f;
-  --sunrise-cream: #fff5df;
-  --sky: #fffaf2;
-  --shadow: 0 24px 80px rgba(250, 136, 35, 0.14);
+  --background: #090a10;
+  --foreground: #f8fafc;
+  --muted: #94a3b8;
+  --border: rgba(82, 90, 255, 0.16);
+  --panel: rgba(15, 17, 26, 0.82);
+  --panel-strong: rgba(15, 17, 26, 0.94);
+  --sunrise-orange: #525AFF;
+  --sunrise-gold: #868fff;
+  --sunrise-cream: #0c0f1a;
+  --sky: #090a10;
+  --shadow: 0 24px 80px rgba(82, 90, 255, 0.14);
 }
 
 html {
@@ -24,8 +24,8 @@ body {
   min-height: 100vh;
   color: var(--foreground);
   background:
-    radial-gradient(circle at top, rgba(255, 211, 111, 0.26), transparent 36%),
-    linear-gradient(180deg, #fffdf8 0%, #fffaf1 44%, #fff7ef 100%);
+    radial-gradient(circle at top, rgba(82, 90, 255, 0.15), transparent 40%),
+    linear-gradient(180deg, #090a10 0%, #0c0f1a 100%);
   text-rendering: optimizeLegibility;
 }
 
@@ -34,8 +34,8 @@ body {
 }
 
 ::selection {
-  background: rgba(254, 127, 45, 0.18);
-  color: #1c1917;
+  background: rgba(82, 90, 255, 0.25);
+  color: #ffffff;
 }
 
 @layer base {
@@ -43,11 +43,11 @@ body {
   h2,
   h3,
   h4 {
-    @apply tracking-tight text-slate-900;
+    @apply tracking-tight text-white;
   }
 
   p {
-    @apply text-slate-600;
+    @apply text-slate-300;
   }
 }
 
@@ -57,40 +57,41 @@ body {
   }
 
   .glass-panel {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92) 0%, rgba(255, 251, 245, 0.88) 100%);
+    background: linear-gradient(180deg, rgba(20, 22, 35, 0.8) 0%, rgba(15, 17, 26, 0.6) 100%);
     box-shadow: var(--shadow);
-    @apply rounded-[32px] border border-white/60 backdrop-blur-sm;
+    @apply rounded-[32px] border border-white/5 backdrop-blur-md;
   }
 
   .sunrise-border {
-    @apply border border-white/70;
+    @apply border border-white/10 bg-slate-900/50;
     box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.9),
-      0 20px 50px rgba(254, 127, 45, 0.1);
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 20px 50px rgba(82, 90, 255, 0.05);
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-orange-200/70 bg-white/85 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-orange-500 shadow-sm;
+    @apply inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-indigo-400 shadow-sm;
   }
 
   .grid-fade {
     background-image:
-      linear-gradient(rgba(254, 127, 45, 0.07) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(254, 127, 45, 0.07) 1px, transparent 1px);
+      linear-gradient(rgba(82, 90, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(82, 90, 255, 0.05) 1px, transparent 1px);
     background-size: 54px 54px;
     mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9), transparent 90%);
   }
 
   .hero-beam {
     background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 247, 221, 0.7) 40%, rgba(254, 127, 45, 0) 100%);
-    filter: blur(24px);
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(82, 90, 255, 0.4) 40%, rgba(82, 90, 255, 0) 100%);
+    filter: blur(48px);
     animation: beamRise 12s ease-in-out infinite alternate;
   }
 
   .hero-sun {
     background:
-      radial-gradient(circle at center, rgba(255, 243, 200, 1) 0%, rgba(255, 219, 129, 0.92) 30%, rgba(254, 127, 45, 0.5) 58%, rgba(254, 127, 45, 0) 76%);
+      radial-gradient(circle at center, rgba(134, 143, 255, 0.8) 0%, rgba(82, 90, 255, 0.6) 30%, rgba(61, 66, 229, 0.3) 58%, rgba(82, 90, 255, 0) 76%);
+    filter: blur(32px);
     animation: sunriseFloat 10s ease-in-out infinite alternate;
   }
 }
@@ -104,22 +105,22 @@ body {
 @keyframes sunriseFloat {
   0% {
     transform: translate(-50%, 12px) scale(0.96);
-    opacity: 0.9;
+    opacity: 0.6;
   }
   100% {
     transform: translate(-50%, -10px) scale(1.04);
-    opacity: 1;
+    opacity: 0.9;
   }
 }
 
 @keyframes beamRise {
   0% {
     transform: translateY(24px) scaleY(0.92);
-    opacity: 0.6;
+    opacity: 0.4;
   }
   100% {
     transform: translateY(-14px) scaleY(1.05);
-    opacity: 1;
+    opacity: 0.7;
   }
 }
 

@@ -20,7 +20,7 @@ export function SolutionSection() {
             <SectionHeading
               eyebrow="The Solution"
               title="Our Mission: Your Success"
-              description="At Bhor Technologies, we believe in new beginnings. We build secure and smart digital systems so you can focus on what matters most: growing your business."
+              description="At Spearkentech, we believe in new beginnings. We build secure and smart digital systems so you can focus on what matters most: growing your business."
             />
             <div className="mt-8">
               <ButtonLink href="#services">Explore Our Services</ButtonLink>
@@ -28,14 +28,14 @@ export function SolutionSection() {
           </Reveal>
           <Reveal delay={120}>
             <div className="glass-panel relative overflow-hidden p-6 sm:p-8">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,211,111,0.25),transparent_34%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(82,90,255,0.1),transparent_34%)]" />
               <div className="relative space-y-4">
                 {pillars.map((item) => (
-                  <div key={item} className="flex gap-4 rounded-[26px] border border-orange-100/80 bg-white/85 p-5">
-                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-orange-50 text-orange-500">
+                  <div key={item} className="flex gap-4 rounded-[26px] border border-white/5 bg-slate-900/50 p-5">
+                    <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-indigo-500/10 text-indigo-400">
                       <CheckIcon className="h-5 w-5" />
                     </div>
-                    <p className="text-sm leading-7 text-slate-700">{item}</p>
+                    <p className="text-sm leading-7 text-slate-300">{item}</p>
                   </div>
                 ))}
               </div>

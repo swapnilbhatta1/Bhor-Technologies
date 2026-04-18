@@ -8,25 +8,29 @@ const config: Config = {
         border: "var(--border)",
         background: "var(--background)",
         foreground: "var(--foreground)",
-        sunrise: {
-          50: "#FFF9EF",
-          100: "#FFF0D6",
-          200: "#FFE1AF",
-          300: "#FFC683",
-          400: "#FEA757",
-          500: "#FE7F2D",
+        neptune: {
+          50: "#ebecff",
+          100: "#daddff",
+          200: "#b5baff",
+          300: "#868fff",
+          400: "#6974ff",
+          500: "#525AFF",
+          600: "#3d42e5",
+          700: "#2d30bf",
+          800: "#25279c",
+          900: "#22257d",
         },
       },
       fontFamily: {
         sans: ["var(--font-manrope)", "sans-serif"],
       },
       boxShadow: {
-        soft: "0 20px 60px rgba(250, 136, 35, 0.12)",
-        panel: "0 18px 40px rgba(15, 23, 42, 0.08)",
+        soft: "0 20px 60px rgba(82, 90, 255, 0.12)",
+        panel: "0 18px 40px rgba(0, 0, 0, 0.4)",
       },
       backgroundImage: {
-        "sunrise-glow":
-          "radial-gradient(circle at center, rgba(254, 198, 131, 0.85) 0%, rgba(254, 127, 45, 0.32) 34%, rgba(255, 255, 255, 0) 68%)",
+        "speak-glow":
+          "radial-gradient(circle at center, rgba(82, 90, 255, 0.4) 0%, rgba(82, 90, 255, 0.1) 40%, rgba(10, 13, 23, 0) 70%)",
       },
     },
   },

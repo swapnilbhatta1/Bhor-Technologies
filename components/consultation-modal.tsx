@@ -87,12 +87,12 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
       if (selectedService) {
         payload.append("service_requested", selectedService);
       }
-      payload.append("_subject", "New service request from Bhor Technologies");
+      payload.append("_subject", "New service request from Spearkentech");
       payload.append("_template", "table");
       payload.append("_honey", "");
       payload.append("_url", window.location.href);
 
-      const response = await fetch("https://formsubmit.co/ajax/bhor.technologies.bd@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/hello.spearkentech@gmail.com", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -128,22 +128,22 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
             className="absolute inset-0 bg-slate-950/45 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
           />
-          <div className="relative z-10 w-full max-w-2xl overflow-hidden rounded-[32px] border border-white/70 bg-[linear-gradient(180deg,rgba(255,255,255,0.98)_0%,rgba(255,248,238,0.98)_100%)] shadow-[0_30px_90px_rgba(15,23,42,0.18)]">
-            <div className="border-b border-orange-100/80 px-6 py-5 sm:px-8">
+          <div className="relative z-10 w-full max-w-2xl overflow-hidden rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(15,17,26,0.98)_0%,rgba(20,22,35,0.98)_100%)] shadow-panel backdrop-blur-md">
+            <div className="border-b border-indigo-500/10 px-6 py-5 sm:px-8">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <span className="eyebrow">Free Consultation</span>
-                  <h2 className="mt-4 text-2xl font-extrabold text-slate-900 sm:text-3xl">
+                  <h2 className="mt-4 text-2xl font-extrabold text-white sm:text-3xl">
                     Tell us about your business
                   </h2>
-                  <p className="mt-3 max-w-xl text-sm leading-7 text-slate-600">
-                    Share a few details and Bhor Technologies will reach out with the right next step.
+                  <p className="mt-3 max-w-xl text-sm leading-7 text-slate-400">
+                    Share a few details and Spearkentech will reach out with the right next step.
                   </p>
                 </div>
                 <button
                   type="button"
                   aria-label="Close modal"
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-orange-100 bg-white text-sm font-semibold text-slate-500 transition hover:text-orange-500"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold text-slate-400 transition hover:text-indigo-400 hover:bg-white/10"
                   onClick={() => setIsOpen(false)}
                 >
                   CLOSE
@@ -152,10 +152,10 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
             </div>
             <div className="px-6 py-6 sm:px-8 sm:py-8">
               {isSubmitted ? (
-                <div className="rounded-[28px] border border-emerald-100 bg-emerald-50/80 p-6">
-                  <h3 className="text-xl font-bold text-slate-900">Thanks, your consultation request was sent.</h3>
-                  <p className="mt-3 text-sm leading-7 text-slate-600">
-                    Your details were submitted to Bhor Technologies successfully. We can now follow up using the email address you entered.
+                <div className="rounded-[28px] border border-indigo-500/30 bg-indigo-500/10 p-6">
+                  <h3 className="text-xl font-bold text-white">Thanks, your consultation request was sent.</h3>
+                  <p className="mt-3 text-sm leading-7 text-slate-300">
+                    Your details were submitted to Spearkentech successfully. We can now follow up using the email address you entered.
                   </p>
                   <button
                     type="button"
@@ -172,7 +172,7 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
               ) : (
                 <form className="grid gap-5 sm:grid-cols-2" onSubmit={handleSubmit}>
                   <label className="block">
-                    <span className="mb-2 block text-sm font-semibold text-slate-700">Customer Name</span>
+                    <span className="mb-2 block text-sm font-semibold text-slate-300">Customer Name</span>
                     <input
                       required
                       name="name"
@@ -181,12 +181,12 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                       onChange={(event) =>
                         setFormState((current) => ({ ...current, name: event.target.value }))
                       }
-                      className="w-full rounded-2xl border border-orange-100 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-orange-300 focus:ring-4 focus:ring-orange-100"
+                      className="w-full rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3 text-sm text-white shadow-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20"
                       placeholder="Enter full name"
                     />
                   </label>
                   <label className="block">
-                    <span className="mb-2 block text-sm font-semibold text-slate-700">Email Address</span>
+                    <span className="mb-2 block text-sm font-semibold text-slate-300">Email Address</span>
                     <input
                       required
                       name="email"
@@ -195,12 +195,12 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                       onChange={(event) =>
                         setFormState((current) => ({ ...current, email: event.target.value }))
                       }
-                      className="w-full rounded-2xl border border-orange-100 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-orange-300 focus:ring-4 focus:ring-orange-100"
+                      className="w-full rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3 text-sm text-white shadow-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20"
                       placeholder="name@company.com"
                     />
                   </label>
                   <label className="block">
-                    <span className="mb-2 block text-sm font-semibold text-slate-700">Phone Number</span>
+                    <span className="mb-2 block text-sm font-semibold text-slate-300">Phone Number</span>
                     <input
                       required
                       name="phone"
@@ -212,12 +212,12 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                           phone: event.target.value,
                         }))
                       }
-                      className="w-full rounded-2xl border border-orange-100 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-orange-300 focus:ring-4 focus:ring-orange-100"
+                      className="w-full rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3 text-sm text-white shadow-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20"
                       placeholder="+1 (555) 000-0000"
                     />
                   </label>
                   <label className="block">
-                    <span className="mb-2 block text-sm font-semibold text-slate-700">Company Name</span>
+                    <span className="mb-2 block text-sm font-semibold text-slate-300">Company Name</span>
                     <input
                       required
                       name="company_name"
@@ -229,7 +229,7 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                           businessName: event.target.value,
                         }))
                       }
-                      className="w-full rounded-2xl border border-orange-100 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-orange-300 focus:ring-4 focus:ring-orange-100"
+                      className="w-full rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3 text-sm text-white shadow-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20"
                       placeholder="Your company name"
                     />
                   </label>

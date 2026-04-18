@@ -18,30 +18,30 @@ export function CaseStudiesSection() {
               <article className="glass-panel overflow-hidden p-6 sm:p-8">
                 <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
                   <div>
-                    <span className="inline-flex rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-orange-500">
+                    <span className="inline-flex rounded-full bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-indigo-400">
                       {study.client}
                     </span>
-                    <h3 className="mt-4 text-2xl font-bold text-slate-900">{study.challenge}</h3>
-                    <p className="mt-4 text-sm leading-7 text-slate-600">
-                      Before working with Bhor Technologies, the team faced friction that limited speed, visibility, and confidence.
+                    <h3 className="mt-4 text-2xl font-bold text-white">{study.challenge}</h3>
+                    <p className="mt-4 text-sm leading-7 text-slate-400">
+                      Before working with Spearkentech, the team faced friction that limited speed, visibility, and confidence.
                     </p>
                   </div>
                   <div className="grid gap-4 md:grid-cols-2">
-                    <div className="rounded-[28px] border border-rose-100 bg-rose-50/70 p-5">
-                      <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-500">Before</h4>
+                    <div className="rounded-[28px] border border-rose-500/30 bg-rose-500/10 p-5">
+                      <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-rose-400">Before</h4>
                       <ul className="mt-4 space-y-3">
                         {study.before.map((item) => (
-                          <li key={item} className="text-sm leading-7 text-slate-700">
+                          <li key={item} className="text-sm leading-7 text-slate-300">
                             {item}
                           </li>
                         ))}
                       </ul>
                     </div>
-                    <div className="rounded-[28px] border border-emerald-100 bg-emerald-50/70 p-5">
-                      <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-600">After</h4>
+                    <div className="rounded-[28px] border border-emerald-500/30 bg-emerald-500/10 p-5">
+                      <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-400">After</h4>
                       <ul className="mt-4 space-y-3">
                         {study.after.map((item) => (
-                          <li key={item} className="text-sm leading-7 text-slate-700">
+                          <li key={item} className="text-sm leading-7 text-slate-300">
                             {item}
                           </li>
                         ))}

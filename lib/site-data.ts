@@ -80,7 +80,7 @@ export const caseStudies = [
 export const testimonials = [
   {
     quote:
-      "Bhor Technologies gave us more than a build team. They reworked how our operations flowed, automated the painful parts, and helped us move with confidence.",
+      "Spearkentech gave us more than a build team. They reworked how our operations flowed, automated the painful parts, and helped us move with confidence.",
     name: "Amina Rahman",
     role: "Operations Director",
   },
@@ -92,7 +92,7 @@ export const testimonials = [
   },
   {
     quote:
-      "We needed speed without chaos. Bhor delivered a polished platform, documented the system clearly, and left us with a setup we could scale.",
+      "We needed speed without chaos. Spearkentech delivered a polished platform, documented the system clearly, and left us with a setup we could scale.",
     name: "Nadia Karim",
     role: "Head of Growth",
   },
@@ -154,7 +154,7 @@ export const faqs = [
   {
     question: "Can you handle both strategy and implementation?",
     answer:
-      "Yes. Bhor Technologies supports the full journey from discovery and technical planning to design, development, launch, and optimization.",
+      "Yes. Spearkentech supports the full journey from discovery and technical planning to design, development, launch, and optimization.",
   },
   {
     question: "How quickly can a project start?",
