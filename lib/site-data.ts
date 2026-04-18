@@ -1,9 +1,10 @@
 export const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Results", href: "#results" },
-  { label: "Process", href: "#process" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Results", href: "/#results" },
+  { label: "Process", href: "/#process" },
+  { label: "Enterprise", href: "/enterprise" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export const problemPoints = [
@@ -168,8 +169,8 @@ export const faqs = [
 ];
 
 export const footerLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Case Studies", href: "#results" },
-  { label: "Process", href: "#process" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/#services" },
+  { label: "Case Studies", href: "/#results" },
+  { label: "Process", href: "/#process" },
+  { label: "FAQ", href: "/#faq" },
 ];
