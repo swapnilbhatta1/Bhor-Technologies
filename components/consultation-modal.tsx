@@ -277,7 +277,7 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
 
 type ConsultationTriggerProps = {
   children: ReactNode;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "primary" | "secondary" | "ghost" | "custom";
   className?: string;
   onClick?: () => void;
   service?: string;
@@ -299,7 +299,7 @@ export function ConsultationTrigger({
   return (
     <button
       type="button"
-      className={buttonLinkClasses(variant, className)}
+      className={variant === "custom" ? className : buttonLinkClasses(variant as any, className)}
       onClick={() => {
         onClick?.();
         context.openModal(service);

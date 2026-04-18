@@ -15,7 +15,7 @@ export function FaqSection() {
         <div className="mt-12 space-y-4">
           {faqs.map((item, index) => (
             <Reveal key={item.question} delay={index * 70}>
-              <details className="glass-panel group p-6 bg-slate-900/30 border border-white/5 backdrop-blur-xl" open={index === 0}>
+              <details className="glass-panel group p-6" open={index === 0}>
                 <summary className="cursor-pointer list-none pr-8 text-lg font-semibold text-white marker:hidden">
                   {item.question}
                 </summary>

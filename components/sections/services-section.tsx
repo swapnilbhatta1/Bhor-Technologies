@@ -31,10 +31,10 @@ export function ServicesSection() {
                 <div className="h-full">
                   <ConsultationTrigger
                     service={card.title}
-                    className="block h-full w-full text-left p-0 border-none bg-transparent hover:bg-transparent shadow-none"
-                    variant="ghost"
+                    className="block h-full w-full text-left p-0 border-none bg-transparent"
+                    variant="custom"
                   >
-                    <article className="glass-panel group flex h-full flex-col p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-indigo-500/40 bg-slate-900/30 border border-white/5 backdrop-blur-xl cursor-pointer">
+                    <article className="glass-panel group flex h-full flex-col p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-indigo-500/40 cursor-pointer">
                       <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 transition-colors duration-300 group-hover:bg-indigo-500 group-hover:text-white">
                         <Icon className="h-7 w-7" />
                       </div>

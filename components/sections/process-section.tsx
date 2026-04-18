@@ -15,7 +15,7 @@ export function ProcessSection() {
         <div className="mt-12 grid gap-5 lg:grid-cols-5">
           {processSteps.map((step, index) => (
             <Reveal key={step.step} delay={index * 90}>
-              <article className="glass-panel h-full p-6 bg-slate-900/30 border border-white/5 backdrop-blur-xl">
+              <article className="glass-panel h-full p-6">
                 <span className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-400">{step.step}</span>
                 <h3 className="mt-4 text-xl font-bold text-white">{step.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-300">{step.description}</p>

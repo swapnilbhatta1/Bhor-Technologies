@@ -15,7 +15,7 @@ export function ProblemSection() {
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {problemPoints.map((point, index) => (
             <Reveal key={point.title} delay={index * 90}>
-              <article className="glass-panel h-full p-6 transition duration-300 hover:-translate-y-1 bg-slate-900/30 border border-white/5 backdrop-blur-xl hover:bg-slate-800/40 hover:border-indigo-500/30">
+              <article className="glass-panel h-full p-6 transition duration-300 hover:-translate-y-1 hover:bg-slate-800/40 hover:border-indigo-500/30">
                 <span className="inline-flex rounded-full bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-indigo-400">
                   Pain Point
                 </span>
