@@ -6,7 +6,7 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { buttonLinkClasses } from "@/components/ui/button-link";
 
 type ConsultationContextValue = {
-  openModal: () => void;
+  openModal: (service?: string) => void;
   closeModal: () => void;
 };
 
@@ -19,19 +19,20 @@ type ConsultationProviderProps = {
 type FormState = {
   name: string;
   email: string;
+  phone: string;
   businessName: string;
-  businessType: string;
 };
 
 const initialFormState: FormState = {
   name: "",
   email: "",
+  phone: "",
   businessName: "",
-  businessType: "",
 };
 
 export function ConsultationProvider({ children }: ConsultationProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
@@ -61,9 +62,10 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
 
   const value = useMemo(
     () => ({
-      openModal: () => {
+      openModal: (service?: string) => {
         setIsSubmitted(false);
         setErrorMessage("");
+        setSelectedService(service || "");
         setIsOpen(true);
       },
       closeModal: () => setIsOpen(false),
@@ -80,9 +82,12 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
       const payload = new FormData();
       payload.append("name", formState.name);
       payload.append("email", formState.email);
-      payload.append("business_name", formState.businessName);
-      payload.append("business_type", formState.businessType);
-      payload.append("_subject", "New consultation request from Bhor Technologies");
+      payload.append("phone", formState.phone);
+      payload.append("company_name", formState.businessName);
+      if (selectedService) {
+        payload.append("service_requested", selectedService);
+      }
+      payload.append("_subject", "New service request from Bhor Technologies");
       payload.append("_template", "table");
       payload.append("_honey", "");
       payload.append("_url", window.location.href);
@@ -195,10 +200,27 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                     />
                   </label>
                   <label className="block">
-                    <span className="mb-2 block text-sm font-semibold text-slate-700">Business Name</span>
+                    <span className="mb-2 block text-sm font-semibold text-slate-700">Phone Number</span>
                     <input
                       required
-                      name="business_name"
+                      name="phone"
+                      type="tel"
+                      value={formState.phone}
+                      onChange={(event) =>
+                        setFormState((current) => ({
+                          ...current,
+                          phone: event.target.value,
+                        }))
+                      }
+                      className="w-full rounded-2xl border border-orange-100 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-orange-300 focus:ring-4 focus:ring-orange-100"
+                      placeholder="+1 (555) 000-0000"
+                    />
+                  </label>
+                  <label className="block">
+                    <span className="mb-2 block text-sm font-semibold text-slate-700">Company Name</span>
+                    <input
+                      required
+                      name="company_name"
                       type="text"
                       value={formState.businessName}
                       onChange={(event) =>
@@ -211,31 +233,10 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                       placeholder="Your company name"
                     />
                   </label>
-                  <label className="block">
-                    <span className="mb-2 block text-sm font-semibold text-slate-700">Business Type</span>
-                    <select
-                      required
-                      name="business_type"
-                      value={formState.businessType}
-                      onChange={(event) =>
-                        setFormState((current) => ({
-                          ...current,
-                          businessType: event.target.value,
-                        }))
-                      }
-                      className="w-full rounded-2xl border border-orange-100 bg-white px-4 py-3 text-sm text-slate-900 shadow-sm outline-none transition focus:border-orange-300 focus:ring-4 focus:ring-orange-100"
-                    >
-                      <option value="" disabled>
-                        Select business type
-                      </option>
-                      <option value="startup">Startup</option>
-                      <option value="agency">Agency</option>
-                      <option value="ecommerce">E-commerce</option>
-                      <option value="saas">SaaS</option>
-                      <option value="enterprise">Enterprise</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </label>
+                  <input type="hidden" name="_captcha" value="false" />
+                  {selectedService && (
+                    <input type="hidden" name="service_requested" value={selectedService} />
+                  )}
                   <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
                   <div className="sm:col-span-2 flex flex-col gap-3 pt-2 sm:flex-row sm:items-center sm:justify-between">
                     <div>
@@ -246,16 +247,23 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                         <p className="mt-2 text-sm font-medium text-rose-600">{errorMessage}</p>
                       ) : null}
                     </div>
-                    <button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className={buttonLinkClasses(
-                        "primary",
-                        isSubmitting ? "cursor-not-allowed opacity-70" : "",
-                      )}
-                    >
-                      {isSubmitting ? "Sending..." : "Submit Request"}
-                    </button>
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className={buttonLinkClasses(
+                          "primary",
+                          isSubmitting ? "cursor-not-allowed opacity-70" : "",
+                        )}
+                      >
+                        {isSubmitting ? (
+                          <span className="flex items-center gap-2">
+                            <span className="h-4 w-4 rounded-full border-2 border-white border-t-transparent animate-spin" />
+                            Sending...
+                          </span>
+                        ) : (
+                          "Submit Request"
+                        )}
+                      </button>
                   </div>
                 </form>
               )}
@@ -272,6 +280,7 @@ type ConsultationTriggerProps = {
   variant?: "primary" | "secondary" | "ghost";
   className?: string;
   onClick?: () => void;
+  service?: string;
 };
 
 export function ConsultationTrigger({
@@ -279,6 +288,7 @@ export function ConsultationTrigger({
   variant = "primary",
   className = "",
   onClick,
+  service,
 }: ConsultationTriggerProps) {
   const context = useContext(ConsultationContext);
 
@@ -292,7 +302,7 @@ export function ConsultationTrigger({
       className={buttonLinkClasses(variant, className)}
       onClick={() => {
         onClick?.();
-        context.openModal();
+        context.openModal(service);
       }}
     >
       {children}
