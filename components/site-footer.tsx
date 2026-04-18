@@ -16,7 +16,7 @@ export function SiteFooter() {
             <div>
               <Logo />
               <p className="mt-5 max-w-md text-base leading-8 text-slate-600">
-                Bhor Technologies builds automation-first digital systems for companies ready to grow with speed, clarity, and security.
+                Innovate. Automate. Secure. Leading the future of AI-driven digital transformation.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <ButtonLink href="mailto:bhor.technologies.bd@gmail.com">bhor.technologies.bd@gmail.com</ButtonLink>

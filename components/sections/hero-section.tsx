@@ -25,15 +25,15 @@ export function HeroSection() {
             <div className="max-w-2xl">
               <span className="eyebrow">Rising technology for a new beginning</span>
               <h1 className="mt-6 text-balance text-4xl font-extrabold leading-[1.04] sm:text-5xl lg:text-[4.5rem]">
-                Build the future with AI systems, secure products, and scalable digital growth.
+                Smart Tech to Grow Your Business Faster.
               </h1>
               <p className="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">
-                Bhor Technologies helps ambitious businesses automate operations, launch premium SaaS products, create modern web and app experiences, and strengthen security from the start.
+                We help businesses save time and grow by combining AI automation, modern software development, and strong cybersecurity. Everything you need, all in one place.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <ButtonLink href="#contact">Get Started</ButtonLink>
+                <ButtonLink href="#contact">Get a Free Consultation</ButtonLink>
                 <ConsultationTrigger variant="secondary">
-                  Book a Free Consultation
+                  Explore Our Services
                 </ConsultationTrigger>
               </div>
               <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-slate-600">

@@ -27,23 +27,23 @@ export const problemPoints = [
 
 export const serviceCards = [
   {
-    title: "AI Automation",
-    description: "Automate repetitive workflows, customer operations, and internal processes with intelligent systems that reduce cost and speed execution.",
+    title: "AI & Automation",
+    description: "Save time and reduce costs by letting AI handle your repetitive daily tasks.",
     icon: "automation",
   },
   {
-    title: "SaaS Solutions",
-    description: "Design and build scalable SaaS platforms with modern architecture, strong UX, and future-ready infrastructure.",
+    title: "Custom SaaS Solutions",
+    description: "We build powerful, scalable cloud software customized exactly for your business needs.",
     icon: "saas",
   },
   {
     title: "Web & App Development",
-    description: "Launch high-performance websites, dashboards, web apps, and mobile-ready experiences that support growth from day one.",
+    description: "Fast, beautiful, and user-friendly websites and mobile apps that your customers will love.",
     icon: "development",
   },
   {
     title: "Cyber Security",
-    description: "Protect products, data, and operations with secure engineering practices, access controls, audits, and resilience planning.",
+    description: "Top-level security to protect your business, website, and customer data from online threats.",
     icon: "security",
   },
 ];
@@ -56,10 +56,9 @@ export const trustStats = [
 ];
 
 export const trustSignals = [
-  "Fast onboarding for qualified projects",
-  "Security-first delivery standards",
-  "Modern app architecture and documentation",
-  "Senior-level strategy from discovery to launch",
+  "All-in-One Solution: AI, Development & Security under one roof.",
+  "Modern Technology: We use fast and scalable tech like Next.js.",
+  "Fast Delivery: We respect your time and deliver optimized solutions quickly.",
 ];
 
 export const caseStudies = [

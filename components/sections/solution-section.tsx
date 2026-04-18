@@ -19,8 +19,8 @@ export function SolutionSection() {
           <Reveal>
             <SectionHeading
               eyebrow="The Solution"
-              title="Bhor Technologies turns complexity into clear, scalable digital momentum."
-              description="We combine strategic thinking, product execution, automation design, and secure engineering to help businesses launch smarter and grow faster."
+              title="Our Mission: Your Success"
+              description="At Bhor Technologies, we believe in new beginnings. We build secure and smart digital systems so you can focus on what matters most: growing your business."
             />
             <div className="mt-8">
               <ButtonLink href="#services">Explore Our Services</ButtonLink>
