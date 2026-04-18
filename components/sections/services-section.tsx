@@ -34,12 +34,12 @@ export function ServicesSection() {
                     className="block h-full w-full text-left p-0 border-none bg-transparent hover:bg-transparent shadow-none"
                     variant="ghost"
                   >
-                    <article className="glass-panel flex h-full flex-col p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-orange-500/30 cursor-pointer">
-                      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-50 text-orange-500 transition-colors duration-300 group-hover:bg-orange-500 group-hover:text-white">
+                    <article className="glass-panel group flex h-full flex-col p-6 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-indigo-500/40 bg-slate-900/30 border border-white/5 backdrop-blur-xl cursor-pointer">
+                      <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 transition-colors duration-300 group-hover:bg-indigo-500 group-hover:text-white">
                         <Icon className="h-7 w-7" />
                       </div>
-                      <h3 className="mt-6 text-xl font-bold text-slate-900">{card.title}</h3>
-                      <p className="mt-3 text-sm leading-7 text-slate-600">{card.description}</p>
+                      <h3 className="mt-6 text-xl font-bold text-white">{card.title}</h3>
+                      <p className="mt-3 text-sm leading-7 text-slate-300">{card.description}</p>
                     </article>
                   </ConsultationTrigger>
                 </div>

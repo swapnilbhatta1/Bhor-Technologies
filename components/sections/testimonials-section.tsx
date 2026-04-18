@@ -16,11 +16,11 @@ export function TestimonialsSection() {
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <Reveal key={testimonial.name} delay={index * 100}>
-              <article className="glass-panel h-full p-6">
-                <p className="text-base leading-8 text-slate-700">“{testimonial.quote}”</p>
-                <div className="mt-8 border-t border-orange-100/80 pt-5">
-                  <h3 className="text-lg font-bold text-slate-900">{testimonial.name}</h3>
-                  <p className="mt-1 text-sm text-slate-500">{testimonial.role}</p>
+              <article className="glass-panel h-full p-6 bg-slate-900/30 border border-white/5 backdrop-blur-xl">
+                <p className="text-base leading-8 text-slate-300">“{testimonial.quote}”</p>
+                <div className="mt-8 border-t border-white/10 pt-5">
+                  <h3 className="text-lg font-bold text-white">{testimonial.name}</h3>
+                  <p className="mt-1 text-sm text-slate-400">{testimonial.role}</p>
                 </div>
               </article>
             </Reveal>

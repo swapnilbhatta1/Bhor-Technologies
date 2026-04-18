@@ -15,12 +15,12 @@ export function ProblemSection() {
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {problemPoints.map((point, index) => (
             <Reveal key={point.title} delay={index * 90}>
-              <article className="glass-panel h-full p-6 transition duration-300 hover:-translate-y-1">
-                <span className="inline-flex rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-orange-500">
+              <article className="glass-panel h-full p-6 transition duration-300 hover:-translate-y-1 bg-slate-900/30 border border-white/5 backdrop-blur-xl hover:bg-slate-800/40 hover:border-indigo-500/30">
+                <span className="inline-flex rounded-full bg-indigo-500/10 border border-indigo-500/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-indigo-400">
                   Pain Point
                 </span>
-                <h3 className="mt-4 text-xl font-bold text-slate-900">{point.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">{point.description}</p>
+                <h3 className="mt-4 text-xl font-bold text-white">{point.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-300">{point.description}</p>
               </article>
             </Reveal>
           ))}
