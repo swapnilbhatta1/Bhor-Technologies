@@ -47,10 +47,13 @@ export default function EnterprisePage() {
               <div className="flex flex-col gap-8 order-1 lg:order-2">
                 
                 {/* Highlight Box */}
-                <div className="inline-flex self-start rounded-2xl border border-red-500/30 bg-red-500/10 p-5 sm:p-6 shadow-[0_0_40px_-10px_rgba(239,68,68,0.15)] backdrop-blur-xl transition duration-500 hover:border-red-500/50 hover:bg-red-500/15 text-red-50">
-                  <h2 className="text-xl sm:text-2xl font-bold tracking-tight">
-                    Founder & CEO, <span className="text-red-400">Bhor Technologies</span>
+                <div className="inline-flex flex-col self-start rounded-2xl border border-red-500/30 bg-red-500/10 p-5 sm:p-6 shadow-[0_0_40px_-10px_rgba(239,68,68,0.15)] backdrop-blur-xl transition duration-500 hover:border-red-500/50 hover:bg-red-500/15">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-2">
+                    Swapnil Bhatta
                   </h2>
+                  <p className="text-lg sm:text-xl font-semibold text-slate-100">
+                    Founder & CEO, <span className="text-red-400">Bhor Technologies</span>
+                  </p>
                 </div>
 
                 {/* Message Content */}
