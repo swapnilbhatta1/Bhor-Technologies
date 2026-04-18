@@ -1,22 +1,24 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export function Logo() {
   return (
-    <Link href="/" className="group flex items-center gap-3 transition-opacity hover:opacity-90">
-      <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-indigo-100 to-indigo-50 shadow-sm transition-transform duration-300 group-hover:scale-105">
-        {/* Placeholder if you want to use the icon still, or remove img entirely */}
-        <Image
-          src="/bhor-logo.png"
-          alt="Spearkentech logo"
-          width={32}
-          height={32}
-          className="h-7 w-7 object-contain opacity-90 transition-transform duration-500 group-hover:scale-110"
-        />
+    <Link href="/" className="group flex items-center gap-1.5 transition-opacity hover:opacity-90">
+      <div className="flex items-center justify-center transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          className="h-9 w-9 text-yellow-400"
+          fill="currentColor"
+          stroke="rgba(0,0,0,0.8)"
+          strokeWidth="0.5"
+        >
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+        </svg>
       </div>
-      <div className="flex flex-col">
-        <span className="text-[0.72rem] font-semibold uppercase tracking-[0.24em] text-indigo-400">Spearken</span>
-        <span className="text-xl font-bold tracking-tight text-slate-100">Tech.</span>
+      <div className="flex flex-col drop-shadow-sm pt-1">
+        <span className="text-[1.35rem] font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-yellow-500">
+          Spearkentech.
+        </span>
       </div>
     </Link>
   );
