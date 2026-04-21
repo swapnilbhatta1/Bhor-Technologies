@@ -59,16 +59,12 @@ export default function EnterprisePage() {
                 {/* Message Content */}
                 <div className="prose prose-invert prose-lg md:prose-xl text-slate-300 max-w-none">
                   <p className="leading-relaxed font-light">
-                    At <strong className="font-semibold text-white">Sparkentech</strong>, the word &apos;Sparken&apos; signifies a new dawn—a fresh start driven by innovation. As the CEO, my core vision is to bridge the gap between complex technology and real-world business growth.
+                    In an era of rapid digital transformation, our mission at <strong className="font-semibold text-white">Sparkentech</strong> is not just to keep pace with global standards, but to redefine them. We believe that technology should be more than just a tool; it should be the catalyst that turns ambitious ideas into reality.
                   </p>
                   
                   <p className="leading-relaxed font-light mt-6 sm:mt-8">
-                    We don&apos;t just write code or build websites; we design <span className="text-indigo-400 font-medium">intelligent ecosystems</span>. By combining AI automation, scalable software, and ironclad cybersecurity, our goal is to help you save time, reduce costs, and scale faster. Your success is the metric we measure our performance by.
+                    Our team is dedicated to harnessing the power of <span className="text-indigo-400 font-medium">AI, automation, and modern web technologies</span> to solve complex challenges with simplicity and precision. We are committed to building a smarter, more automated future—together with you.
                   </p>
-                  
-                  <blockquote className="mt-10 sm:mt-12 text-xl sm:text-[1.35rem] font-medium text-white italic border-l-4 border-indigo-500 pl-6 py-2 leading-snug">
-                    &quot;Let&apos;s innovate, automate, and secure the future of your business together.&quot;
-                  </blockquote>
                 </div>
               </div>
 
