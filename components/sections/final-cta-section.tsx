@@ -19,7 +19,7 @@ export function FinalCtaSection() {
                   Start Your Digital Transformation Today
                 </h2>
                 <p className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                  If your business is ready to automate, launch, secure, or scale, Spearkentech can help you move quickly with the right systems behind you.
+                  If your business is ready to automate, launch, secure, or scale, Sparkentech can help you move quickly with the right systems behind you.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">

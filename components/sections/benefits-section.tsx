@@ -12,7 +12,7 @@ export function BenefitsSection() {
             <SectionHeading
               eyebrow="Benefits"
               title="Designed to create faster growth with less operational drag."
-              description="Spearkentech focuses on business outcomes that compound: speed, efficiency, automation, resilience, and a stronger digital foundation."
+              description="Sparkentech focuses on business outcomes that compound: speed, efficiency, automation, resilience, and a stronger digital foundation."
             />
           </Reveal>
           <div className="grid gap-5 sm:grid-cols-2">

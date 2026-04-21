@@ -4,8 +4,8 @@ import { SiteHeader } from "@/components/site-header";
 import { Container } from "@/components/ui/container";
 
 export const metadata = {
-  title: "Enterprise | Spearkentech",
-  description: "Enterprise solutions by Spearkentech. Innovate, automate, and secure the future of your business together.",
+  title: "Enterprise | Sparkentech",
+  description: "Enterprise solutions by Sparkentech. Innovate, automate, and secure the future of your business together.",
 };
 
 export default function EnterprisePage() {
@@ -52,14 +52,14 @@ export default function EnterprisePage() {
                     Swapnil Bhatta
                   </h2>
                   <p className="text-lg sm:text-xl font-semibold text-slate-100">
-                    Founder & CEO, <span className="text-indigo-400">Spearkentech</span>
+                    Founder & CEO, <span className="text-indigo-400">Sparkentech</span>
                   </p>
                 </div>
 
                 {/* Message Content */}
                 <div className="prose prose-invert prose-lg md:prose-xl text-slate-300 max-w-none">
                   <p className="leading-relaxed font-light">
-                    At <strong className="font-semibold text-white">Spearkentech</strong>, the word &apos;Spearken&apos; signifies a new dawn—a fresh start driven by innovation. As the CEO, my core vision is to bridge the gap between complex technology and real-world business growth.
+                    At <strong className="font-semibold text-white">Sparkentech</strong>, the word &apos;Sparken&apos; signifies a new dawn—a fresh start driven by innovation. As the CEO, my core vision is to bridge the gap between complex technology and real-world business growth.
                   </p>
                   
                   <p className="leading-relaxed font-light mt-6 sm:mt-8">

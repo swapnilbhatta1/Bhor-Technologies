@@ -23,7 +23,7 @@ export function CaseStudiesSection() {
                     </span>
                     <h3 className="mt-4 text-2xl font-bold text-white">{study.challenge}</h3>
                     <p className="mt-4 text-sm leading-7 text-slate-400">
-                      Before working with Spearkentech, the team faced friction that limited speed, visibility, and confidence.
+                      Before working with Sparkentech, the team faced friction that limited speed, visibility, and confidence.
                     </p>
                   </div>
                   <div className="grid gap-4 md:grid-cols-2">

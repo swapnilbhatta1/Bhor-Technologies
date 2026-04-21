@@ -1,6 +1,6 @@
-# Spearkentech
+# Sparkentech
 
-Production-ready Next.js landing page for Spearkentech with a neptune-inspired dark theme, modular App Router structure, Tailwind CSS styling, and conversion-focused page sections.
+Production-ready Next.js landing page for Sparkentech with a neptune-inspired dark theme, modular App Router structure, Tailwind CSS styling, and conversion-focused page sections.
 
 ## Stack
 

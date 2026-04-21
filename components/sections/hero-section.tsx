@@ -1,6 +1,7 @@
 import { ConsultationTrigger } from "@/components/consultation-modal";
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 import { ButtonLink } from "@/components/ui/button-link";
+import { CyberGlobe } from "@/components/ui/cyber-globe";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 
@@ -19,6 +20,15 @@ export function HeroSection() {
       <div className="hero-beam absolute left-1/2 top-24 h-[32rem] w-[48rem] -translate-x-1/2 rounded-full opacity-60" />
       <div className="hero-sun absolute left-1/2 top-[52%] h-[44rem] w-[44rem] -translate-x-1/2 rounded-full opacity-80" />
       <div className="absolute inset-x-0 bottom-[22%] h-px bg-gradient-to-r from-transparent via-indigo-500/20 to-transparent" />
+
+      {/* ── Cyber Globe — absolute background, behind all content ── */}
+      <div
+        className="pointer-events-none absolute right-[-6%] top-1/2 -translate-y-[48%] h-[420px] w-[420px] opacity-25 sm:h-[520px] sm:w-[520px] sm:opacity-35 lg:h-[660px] lg:w-[660px] lg:opacity-50 xl:right-[2%]"
+        aria-hidden="true"
+      >
+        <CyberGlobe />
+      </div>
+
       <Container className="relative z-10">
         <div className="grid items-center gap-12 pb-20 pt-8 lg:grid-cols-[1.05fr_0.95fr] lg:pb-24">
           <Reveal>

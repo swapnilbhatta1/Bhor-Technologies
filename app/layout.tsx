@@ -10,16 +10,16 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const siteTitle = "Spearkentech | AI Automation, SaaS, Development & Cyber Security";
+const siteTitle = "Sparkentech | AI Automation, SaaS, Development & Cyber Security";
 const siteDescription =
-  "Spearkentech helps ambitious businesses automate operations, launch scalable SaaS products, build modern web and mobile apps, and stay secure from day one.";
+  "Sparkentech helps ambitious businesses automate operations, launch scalable SaaS products, build modern web and mobile apps, and stay secure from day one.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.bhortechnologies.com"),
   title: siteTitle,
   description: siteDescription,
   keywords: [
-    "Spearkentech",
+    "Sparkentech",
     "AI Automation",
     "SaaS Development",
     "Web Development",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title: siteTitle,
     description: siteDescription,
     url: "https://www.bhortechnologies.com",
-    siteName: "Spearkentech",
+    siteName: "Sparkentech",
     locale: "en_US",
     type: "website",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Spearkentech dark-theme technology brand image",
+        alt: "Sparkentech dark-theme technology brand image",
       },
     ],
   },

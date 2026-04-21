@@ -20,7 +20,7 @@ export function SolutionSection() {
             <SectionHeading
               eyebrow="The Solution"
               title="Our Mission: Your Success"
-              description="At Spearkentech, we believe in new beginnings. We build secure and smart digital systems so you can focus on what matters most: growing your business."
+              description="At Sparkentech, we believe in new beginnings. We build secure and smart digital systems so you can focus on what matters most: growing your business."
             />
             <div className="mt-8">
               <ButtonLink href="#services">Explore Our Services</ButtonLink>

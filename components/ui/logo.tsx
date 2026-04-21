@@ -17,7 +17,7 @@ export function Logo() {
       </div>
       <div className="flex flex-col drop-shadow-sm pt-1">
         <span className="text-[1.35rem] font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-yellow-500">
-          Spearkentech.
+          Sparkentech.
         </span>
       </div>
     </Link>

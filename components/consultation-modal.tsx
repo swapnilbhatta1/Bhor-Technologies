@@ -87,7 +87,7 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
       if (selectedService) {
         payload.append("service_requested", selectedService);
       }
-      payload.append("_subject", "New service request from Spearkentech");
+      payload.append("_subject", "New service request from Sparkentech");
       payload.append("_template", "table");
       payload.append("_honey", "");
       payload.append("_url", window.location.href);
@@ -137,7 +137,7 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                     Tell us about your business
                   </h2>
                   <p className="mt-3 max-w-xl text-sm leading-7 text-slate-400">
-                    Share a few details and Spearkentech will reach out with the right next step.
+                    Share a few details and Sparkentech will reach out with the right next step.
                   </p>
                 </div>
                 <button
@@ -155,7 +155,7 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                 <div className="rounded-[28px] border border-indigo-500/30 bg-indigo-500/10 p-6">
                   <h3 className="text-xl font-bold text-white">Thanks, your consultation request was sent.</h3>
                   <p className="mt-3 text-sm leading-7 text-slate-300">
-                    Your details were submitted to Spearkentech successfully. We can now follow up using the email address you entered.
+                    Your details were submitted to Sparkentech successfully. We can now follow up using the email address you entered.
                   </p>
                   <button
                     type="button"
@@ -299,7 +299,7 @@ export function ConsultationTrigger({
   return (
     <button
       type="button"
-      className={variant === "custom" ? className : buttonLinkClasses(variant as any, className)}
+      className={variant === "custom" ? className : buttonLinkClasses(variant as "primary" | "secondary" | "ghost", className)}
       onClick={() => {
         onClick?.();
         context.openModal(service);

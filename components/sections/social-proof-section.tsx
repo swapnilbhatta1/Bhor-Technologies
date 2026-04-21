@@ -12,7 +12,7 @@ export function SocialProofSection() {
               <div>
                 <span className="eyebrow">Trust Signals</span>
                 <h2 className="mt-6 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
-                  Why Choose Spearkentech?
+                  Why Choose Sparkentech?
                 </h2>
                 <p className="mt-5 max-w-xl text-base leading-8 text-slate-600">
                   We focus on shipping work that saves time, improves customer experience, and creates a stronger foundation for long-term scale.

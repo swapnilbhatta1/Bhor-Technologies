@@ -19,7 +19,7 @@ export function SiteFooter() {
                 Innovate. Automate. Secure. Leading the future of AI-driven digital transformation.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <ButtonLink href="mailto:hello.spearkentech@gmail.com">hello.spearkentech@gmail.com</ButtonLink>
+                <ButtonLink href="mailto:hello.spearkentech@gmail.com">hello.sparkentech@gmail.com</ButtonLink>
                 <ButtonLink href="tel:+8801349963230" variant="secondary">
                   +8801349963230
                 </ButtonLink>
@@ -85,7 +85,7 @@ export function SiteFooter() {
             </div>
           </div>
           <div className="mt-10 flex flex-col gap-3 border-t border-indigo-500/10 pt-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-            <p>&copy; {new Date().getFullYear()} Spearkentech. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Sparkentech. All rights reserved.</p>
             <p>AI Automation | SaaS | Web & App Development | Cyber Security</p>
           </div>
         </div>

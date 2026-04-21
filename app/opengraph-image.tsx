@@ -135,7 +135,7 @@ export default function OpenGraphImage() {
                   textTransform: "uppercase",
                 }}
               >
-                Spearken
+                Sparken
               </span>
               <span
                 style={{
