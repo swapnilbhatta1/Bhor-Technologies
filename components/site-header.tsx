@@ -41,8 +41,8 @@ export function SiteHeader() {
       <div
         className={`mx-auto flex max-w-7xl items-center justify-between rounded-full px-4 py-3 transition duration-300 sm:px-6 ${
           isScrolled
-            ? "border border-white/70 bg-white/82 shadow-[0_16px_40px_rgba(15,23,42,0.08)] backdrop-blur-xl"
-            : "bg-white/55 backdrop-blur-md"
+            ? "border border-white/10 bg-slate-950/80 shadow-[0_16px_40px_rgba(0,0,0,0.3)] backdrop-blur-xl"
+            : "bg-white/5 border border-white/10 backdrop-blur-md"
         }`}
       >
         <Logo />
@@ -51,7 +51,7 @@ export function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-slate-600 transition hover:text-orange-500"
+              className="text-sm font-medium text-slate-300 transition hover:text-indigo-400"
             >
               {item.label}
             </Link>
@@ -64,7 +64,7 @@ export function SiteHeader() {
           type="button"
           aria-expanded={isMenuOpen}
           aria-label="Toggle navigation"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-orange-200/60 bg-white/80 text-slate-900 lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-200 lg:hidden"
           onClick={() => setIsMenuOpen((current) => !current)}
         >
           <span className="space-y-1.5">
@@ -75,13 +75,13 @@ export function SiteHeader() {
         </button>
       </div>
       {isMenuOpen ? (
-        <div className="mx-auto mt-3 max-w-7xl rounded-[28px] border border-white/70 bg-white/92 p-4 shadow-[0_20px_60px_rgba(15,23,42,0.08)] backdrop-blur-xl lg:hidden">
+        <div className="mx-auto mt-3 max-w-7xl rounded-[28px] border border-white/10 bg-slate-950/90 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.4)] backdrop-blur-xl lg:hidden">
           <nav className="flex flex-col gap-2">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-orange-50 hover:text-orange-500"
+                className="rounded-2xl px-4 py-3 text-sm font-medium text-slate-300 transition hover:bg-white/5 hover:text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
