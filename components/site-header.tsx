@@ -41,8 +41,8 @@ export function SiteHeader() {
       <div
         className={`mx-auto flex max-w-7xl items-center justify-between rounded-full px-4 py-3 transition duration-300 sm:px-6 ${
           isScrolled
-            ? "border border-white/10 bg-slate-950/80 shadow-[0_16px_40px_rgba(0,0,0,0.3)] backdrop-blur-xl"
-            : "bg-white/5 border border-white/10 backdrop-blur-md"
+            ? "border border-white/10 bg-slate-950/70 shadow-[0_16px_40px_rgba(0,0,0,0.3)] backdrop-blur-xl"
+            : "bg-white/5 border border-white/10 backdrop-blur-xl"
         }`}
       >
         <Logo />
