@@ -52,11 +52,13 @@ export function HeroSection() {
               <p className="mt-6 max-w-xl text-base leading-8 text-slate-400 sm:text-lg">
                 We help businesses save time and grow by combining AI automation, modern software development, and strong cybersecurity. Everything you need, all in one place.
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <ButtonLink href="#contact">Get a Free Consultation</ButtonLink>
-                <ConsultationTrigger variant="secondary">
-                  Explore Our Services
-                </ConsultationTrigger>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <ButtonLink href="#contact" className="w-full sm:w-auto justify-center">Get a Free Consultation</ButtonLink>
+                <div className="w-full sm:w-auto">
+                  <ConsultationTrigger variant="secondary" className="w-full justify-center">
+                    Explore Our Services
+                  </ConsultationTrigger>
+                </div>
               </div>
               <div className="mt-8 flex flex-wrap items-center gap-4 text-sm text-slate-300">
                 <span className="rounded-full border border-indigo-500/30 bg-white/5 px-4 py-2 font-medium">
@@ -72,7 +74,7 @@ export function HeroSection() {
             <div 
               ref={panelRef}
               onMouseMove={handleMouseMove}
-              className="group relative overflow-hidden p-6 sm:p-8 rounded-[32px] transition-all duration-500 hover:rounded-[40px] hover:scale-[1.02]"
+              className="group relative overflow-hidden p-5 sm:p-8 rounded-[24px] sm:rounded-[32px] transition-all duration-500 md:hover:rounded-[40px] md:hover:scale-[1.02]"
               style={{
                 background: "rgba(255, 255, 255, 0.02)",
                 backdropFilter: "blur(40px)",
@@ -90,14 +92,14 @@ export function HeroSection() {
               />
               
               <div className="relative z-10">
-                <div className="flex items-center justify-between rounded-[28px] border border-white/5 bg-slate-900/50 px-5 py-4 shadow-sm">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-[20px] sm:rounded-[28px] border border-white/5 bg-slate-900/50 px-4 sm:px-5 py-4 shadow-sm">
                   <div>
-                    <p className="text-sm font-semibold uppercase tracking-[0.16em] text-indigo-400">Growth Snapshot</p>
-                    <p className="mt-1 text-lg font-bold text-slate-100">Automation-first systems that scale with you</p>
+                    <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.16em] text-indigo-400">Growth Snapshot</p>
+                    <p className="mt-1 text-base sm:text-lg font-bold text-slate-100">Automation-first systems that scale with you</p>
                   </div>
-                  <span className="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-semibold text-indigo-400 border border-indigo-500/20">Live Strategy</span>
+                  <span className="shrink-0 rounded-full bg-indigo-500/10 px-3 py-1.5 text-xs font-semibold text-indigo-400 border border-indigo-500/20">Live Strategy</span>
                 </div>
-                <div className="mt-6 grid gap-4 sm:grid-cols-2">
+                <div className="mt-5 sm:mt-6 grid gap-3 sm:gap-4 sm:grid-cols-2">
                   {heroBullets.map((item) => (
                     <div
                       key={item}
@@ -110,11 +112,11 @@ export function HeroSection() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-6 rounded-[30px] bg-indigo-950/40 border border-indigo-500/20 px-6 py-5 text-white">
-                  <div className="flex items-center justify-between gap-4">
+                <div className="mt-5 sm:mt-6 rounded-[24px] sm:rounded-[30px] bg-indigo-950/40 border border-indigo-500/20 px-5 sm:px-6 py-4 sm:py-5 text-white">
+                  <div className="flex items-center justify-between gap-3 sm:gap-4">
                     <div>
-                      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-indigo-300">Launch momentum</p>
-                      <p className="mt-2 text-2xl font-bold">Move from manual friction to measurable scale.</p>
+                      <p className="text-[11px] sm:text-sm font-semibold uppercase tracking-[0.18em] text-indigo-300">Launch momentum</p>
+                      <p className="mt-1.5 sm:mt-2 text-lg sm:text-2xl font-bold leading-tight">Move from manual friction to measurable scale.</p>
                     </div>
                     <div className="hidden rounded-full bg-white/5 p-3 border border-white/10 sm:block">
                       <ArrowRightIcon className="h-6 w-6 text-indigo-300" />
