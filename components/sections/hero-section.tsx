@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import { ConsultationTrigger } from "@/components/consultation-modal";
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 import { ButtonLink } from "@/components/ui/button-link";
@@ -11,6 +14,17 @@ const heroBullets = [
 ];
 
 export function HeroSection() {
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!panelRef.current) return;
+    const rect = panelRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    panelRef.current.style.setProperty("--mouse-x", `${x}px`);
+    panelRef.current.style.setProperty("--mouse-y", `${y}px`);
+  };
+
   return (
     <section className="relative isolate overflow-hidden pt-32 sm:pt-36 bg-[#090a10]">
       {/* Video Background */}
@@ -55,9 +69,27 @@ export function HeroSection() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <div className="glass-panel relative overflow-hidden p-6 sm:p-8">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(82,90,255,0.15),transparent_40%),linear-gradient(180deg,rgba(15,17,26,0.5),rgba(9,10,16,0.3))]" />
-              <div className="relative">
+            <div 
+              ref={panelRef}
+              onMouseMove={handleMouseMove}
+              className="group relative overflow-hidden p-6 sm:p-8 rounded-[32px] transition-all duration-500 hover:rounded-[40px] hover:scale-[1.02]"
+              style={{
+                background: "rgba(255, 255, 255, 0.02)",
+                backdropFilter: "blur(40px)",
+                WebkitBackdropFilter: "blur(40px)",
+                boxShadow: "0 20px 40px rgba(0,0,0,0.2), inset 0 1px 2px rgba(255,255,255,0.2), inset 0 -1px 2px rgba(0,0,0,0.1)",
+                border: "1px solid rgba(255,255,255,0.1)",
+              }}
+            >
+              {/* Dynamic Mouse Glow (Water reflection) */}
+              <div 
+                className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                style={{
+                  background: "radial-gradient(600px circle at var(--mouse-x, 0) var(--mouse-y, 0), rgba(255,255,255,0.15), transparent 40%)"
+                }}
+              />
+              
+              <div className="relative z-10">
                 <div className="flex items-center justify-between rounded-[28px] border border-white/5 bg-slate-900/50 px-5 py-4 shadow-sm">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.16em] text-indigo-400">Growth Snapshot</p>
