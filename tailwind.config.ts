@@ -23,6 +23,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-manrope)", "sans-serif"],
+        display: ["var(--font-poppins)", "sans-serif"],
+        serif: ["var(--font-source-serif)", "serif"],
       },
       boxShadow: {
         soft: "0 20px 60px rgba(82, 90, 255, 0.12)",
