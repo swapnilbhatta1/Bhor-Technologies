@@ -7,9 +7,9 @@ import {
   Wand2,
   BookOpen,
   ArrowRight,
-  Twitter,
-  Linkedin,
-  Instagram,
+  Share2,
+  Link2,
+  Camera,
   Menu,
 } from "lucide-react";
 
@@ -98,9 +98,9 @@ export default function BloomHeroPage() {
             {/* Social pill */}
             <div className="bloom-social-pill liquid-glass">
               {[
-                { Icon: Twitter, label: "Twitter" },
-                { Icon: Linkedin, label: "LinkedIn" },
-                { Icon: Instagram, label: "Instagram" },
+                { Icon: Share2,  label: "Twitter" },
+                { Icon: Link2,   label: "LinkedIn" },
+                { Icon: Camera,  label: "Instagram" },
               ].map(({ Icon, label }) => (
                 <a key={label} href="#" aria-label={label} className="bloom-social-icon">
                   <span className="bloom-icon-circle">
