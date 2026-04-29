@@ -34,6 +34,15 @@ const config: Config = {
         "speak-glow":
           "radial-gradient(circle at center, rgba(82, 90, 255, 0.4) 0%, rgba(82, 90, 255, 0.1) 40%, rgba(10, 13, 23, 0) 70%)",
       },
+      animation: {
+        "marquee": "marquee 40s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
     },
   },
   plugins: [],

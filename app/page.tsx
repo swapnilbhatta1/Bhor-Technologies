@@ -6,6 +6,7 @@ import { CaseStudiesSection } from "@/components/sections/case-studies-section";
 import { FaqSection } from "@/components/sections/faq-section";
 import { FinalCtaSection } from "@/components/sections/final-cta-section";
 import { HeroSection } from "@/components/sections/hero-section";
+import { TrustedEcosystemSection } from "@/components/sections/trusted-ecosystem-section";
 import { ProblemSection } from "@/components/sections/problem-section";
 import { ProcessSection } from "@/components/sections/process-section";
 import { ServicesSection } from "@/components/sections/services-section";
@@ -20,6 +21,7 @@ export default function HomePage() {
         <SiteHeader />
         <main>
           <HeroSection />
+          <TrustedEcosystemSection />
           <ProblemSection />
           <SolutionSection />
           <ServicesSection />
