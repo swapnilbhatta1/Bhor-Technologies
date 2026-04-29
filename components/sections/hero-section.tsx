@@ -1,7 +1,6 @@
 import { ConsultationTrigger } from "@/components/consultation-modal";
 import { ArrowRightIcon, CheckIcon } from "@/components/icons";
 import { ButtonLink } from "@/components/ui/button-link";
-import { CyberGlobe } from "@/components/ui/cyber-globe";
 import { Container } from "@/components/ui/container";
 import { Reveal } from "@/components/ui/reveal";
 
@@ -14,20 +13,19 @@ const heroBullets = [
 export function HeroSection() {
   return (
     <section className="relative isolate overflow-hidden pt-32 sm:pt-36 bg-[#090a10]">
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(9,10,16,1)_0%,rgba(15,17,26,0.85)_42%,rgba(10,12,20,1)_100%)]" />
-      <div className="absolute inset-x-0 top-0 h-[78%] bg-gradient-to-b from-indigo-950/20 via-indigo-900/10 to-transparent" />
-      <div className="absolute inset-0 grid-fade opacity-40" />
-      <div className="hero-beam absolute left-1/2 top-24 h-[32rem] w-[48rem] -translate-x-1/2 rounded-full opacity-60" />
-      <div className="hero-sun absolute left-1/2 top-[52%] h-[44rem] w-[44rem] -translate-x-1/2 rounded-full opacity-80" />
-      <div className="absolute inset-x-0 bottom-[22%] h-px bg-gradient-to-r from-transparent via-indigo-500/20 to-transparent" />
-
-      {/* ── Cyber Globe — absolute background, behind all content ── */}
-      <div
-        className="pointer-events-none absolute right-[-6%] top-1/2 -translate-y-[48%] h-[420px] w-[420px] opacity-25 sm:h-[520px] sm:w-[520px] sm:opacity-35 lg:h-[660px] lg:w-[660px] lg:opacity-50 xl:right-[2%]"
+      {/* Video Background */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover z-0"
+        src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260315_073750_51473149-4350-4920-ae24-c8214286f323.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
         aria-hidden="true"
-      >
-        <CyberGlobe />
-      </div>
+      />
+      {/* Dark overlay to ensure text remains readable over the video */}
+      <div className="absolute inset-0 bg-black/60 z-0" />
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#090a10] to-transparent z-0" />
 
       <Container className="relative z-10">
         <div className="grid items-center gap-12 pb-20 pt-8 lg:grid-cols-[1.05fr_0.95fr] lg:pb-24">
