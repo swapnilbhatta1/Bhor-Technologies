@@ -21,6 +21,7 @@ type FormState = {
   email: string;
   phone: string;
   businessName: string;
+  category: string;
 };
 
 const initialFormState: FormState = {
@@ -28,6 +29,7 @@ const initialFormState: FormState = {
   email: "",
   phone: "",
   businessName: "",
+  category: "",
 };
 
 export function ConsultationProvider({ children }: ConsultationProviderProps) {
@@ -84,6 +86,7 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
       payload.append("email", formState.email);
       payload.append("phone", formState.phone);
       payload.append("company_name", formState.businessName);
+      payload.append("category", formState.category);
       if (selectedService) {
         payload.append("service_requested", selectedService);
       }
@@ -232,6 +235,33 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
                       className="w-full rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3 text-sm text-white shadow-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20"
                       placeholder="Your company name"
                     />
+                  </label>
+                  <label className="block sm:col-span-2">
+                    <span className="mb-2 block text-sm font-semibold text-slate-300">Category / Industry</span>
+                    <select
+                      required
+                      name="category"
+                      value={formState.category}
+                      onChange={(event) =>
+                        setFormState((current) => ({
+                          ...current,
+                          category: event.target.value,
+                        }))
+                      }
+                      className="w-full rounded-2xl border border-white/10 bg-slate-900/50 px-4 py-3 text-sm text-white shadow-sm outline-none transition focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/20 [&>option]:bg-slate-900 [&>option]:text-white"
+                    >
+                      <option value="" disabled>Select your industry</option>
+                      <option value="E-commerce & Retail">E-commerce & Retail</option>
+                      <option value="Healthcare & Medical">Healthcare & Medical</option>
+                      <option value="Finance & Fintech">Finance & Fintech</option>
+                      <option value="Education & EdTech">Education & EdTech</option>
+                      <option value="Real Estate">Real Estate</option>
+                      <option value="Technology & Software">Technology & Software</option>
+                      <option value="Manufacturing & Logistics">Manufacturing & Logistics</option>
+                      <option value="Travel & Hospitality">Travel & Hospitality</option>
+                      <option value="Media & Entertainment">Media & Entertainment</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </label>
                   <input type="hidden" name="_captcha" value="false" />
                   {selectedService && (
