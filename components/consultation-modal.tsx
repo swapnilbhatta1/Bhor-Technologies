@@ -95,7 +95,7 @@ export function ConsultationProvider({ children }: ConsultationProviderProps) {
       payload.append("_honey", "");
       payload.append("_url", window.location.href);
 
-      const response = await fetch("https://formsubmit.co/ajax/hello.spearkentech@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/database.sparkentech@gmail.com", {
         method: "POST",
         headers: {
           Accept: "application/json",

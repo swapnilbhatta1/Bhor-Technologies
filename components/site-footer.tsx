@@ -19,7 +19,7 @@ export function SiteFooter() {
                 Innovate. Automate. Secure. Leading the future of AI-driven digital transformation.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <ButtonLink href="mailto:hello.spearkentech@gmail.com">hello.sparkentech@gmail.com</ButtonLink>
+                <ButtonLink href="mailto:hello.sparkentech@gmail.com">hello.sparkentech@gmail.com</ButtonLink>
                 <ButtonLink href="tel:+8801349963230" variant="secondary">
                   +8801349963230
                 </ButtonLink>
